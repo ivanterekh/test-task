@@ -15,7 +15,7 @@ class TextAdder extends Component {
     };
 
     handleAddText = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         this.props.addText(this.state.input);
         this.setState({ input: "" });
     };
@@ -31,7 +31,7 @@ class TextAdder extends Component {
                         onChange={e => this.updateInput(e.target.value)}
                     />
                 </FormGroup>
-                <Button onClick={this.handleAddText} className="pull-right">Add text</Button>
+                <Button type="submit" onClick={this.handleAddText} className="pull-right">Add text</Button>
             </form>
         );
     }

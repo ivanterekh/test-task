@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.link {
+    float: none !important;
+    display: inline-block !important;
+}
+
+.logo {
+    position: absolute;
+    height: 50px;
+}

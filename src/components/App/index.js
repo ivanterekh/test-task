@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import {Grid} from 'react-bootstrap';
 import Task1 from "../Task1"
+import Task2 from "../Task2"
+import Header from "../Header"
 
-class App extends Component {
+export default class extends Component {
     render() {
-        return (
-            <Grid>
-                <Task1/>
-            </Grid>
-        );
+        return <div>
+            <Header/>
+            <Task1/>
+            <Task2/>
+        </div>
     }
 }
-
-export default App;
