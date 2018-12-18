@@ -1,11 +1,12 @@
 import React from "react";
 import {Navbar, Nav, NavItem} from "react-bootstrap";
 import "./Header.css";
+import logo from "./logo.png";
 
 export default function (props) {
     return <Navbar inverse staticTop>
         <Navbar.Collapse>
-            <img src="/logo.png" alt="PIXELPLEX" className="pull-left logo"/>
+            <img src={logo} alt="PIXELPLEX" className="pull-left logo"/>
             <Nav className="header">
                 <NavItem className="link" onClick={() => window.location.reload()} eventKey={1} href="#">
                     Home
