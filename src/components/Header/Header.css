@@ -8,7 +8,11 @@
     display: inline-block !important;
 }
 
-.logo {
+.logo-bigscreen {
     position: absolute;
+}
+
+.logo {
     height: 50px;
+    padding-left: 15px;
 }
