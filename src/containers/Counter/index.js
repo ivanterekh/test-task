@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Col, Grid} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {connect} from "react-redux";
 import store from "../../redux/store";
 
@@ -40,10 +40,10 @@ class Counter extends Component {
     }
 
     render() {
-        return <Grid >
-            <Col mdOffset={3} md={6} sm={10} smOffset={1}><h4>Counter</h4></Col>
-            <Col mdOffset={3} md={6} sm={10} smOffset={1}><h4>{this.state.counter}</h4></Col>
-        </Grid>
+        return <Row >
+            <Col smOffset={4} sm={8}><h4>Counter</h4></Col>
+            <Col smOffset={4} sm={8}><h4>{this.state.counter}</h4></Col>
+        </Row>
     }
 }
 
